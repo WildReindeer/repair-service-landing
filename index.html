@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ремонт бытовой техники — СтройСервис | Гарантия 12 месяцев</title>
+  <meta name="description" content="Профессиональный ремонт бытовой техники с гарантией. Бесплатная диагностика, выезд мастера в день обращения.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-content">
+        <div class="brand">
+          <h1>СтройСервис</h1>
+          <p class="tagline">Ремонт бытовой техники с гарантией</p>
+        </div>
+        <div class="header-contacts">
+          <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+          <button class="btn btn-primary btn-small" id="callMasterBtn">Вызвать мастера</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 id="hero-title">Ремонт бытовой техники в день обращения</h2>
+          <p class="hero-description">Быстрая диагностика, оригинальные запчасти, гарантия до 12 месяцев. Работаем с 2010 года.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-large">Заказать ремонт</a>
+            <a href="#services" class="btn btn-outline">Наши услуги</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hero-bg.jpeg" alt="Мастер ремонтирует бытовую технику" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits" aria-labelledby="benefits-title">
+    <div class="container">
+      <h2 id="benefits-title" class="section-title visually-hidden">Наши преимущества</h2>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="benefit-icon">🚗</div>
+          <h3>Бесплатная диагностика</h3>
+          <p>Выезд мастера и первичная диагностика — бесплатно при последующем ремонте</p>
+        </article>
+        
+        <article class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3>Гарантия до 12 месяцев</h3>
+          <p>Официальная гарантия на все виды работ и используемые запчасти</p>
+        </article>
+        
+        <article class="benefit-card">
+          <div class="benefit-icon">📦</div>
+          <h3>Запчасти в наличии</h3>
+          <p>Собственный склад оригинальных запчастей для большинства моделей</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title" class="section-title">Наши услуги</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">❄️</div>
+          <div class="service-content">
+            <h3>Ремонт холодильников</h3>
+            <p>Диагностика, замена компрессора, устранение утечек фреона, ремонт систем управления</p>
+            <div class="service-actions">
+              <a href="#contact" class="btn btn-primary">Заказать ремонт</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🌀</div>
+          <div class="service-content">
+            <h3>Ремонт стиральных машин</h3>
+            <p>Замена подшипников, ремонт барабана, очистка ТЭНа, настройка электроники</p>
+            <div class="service-actions">
+              <a href="#contact" class="btn btn-primary">Заказать ремонт</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">📡</div>
+          <div class="service-content">
+            <h3>Ремонт микроволновых печей</h3>
+            <p>Замена магнетрона, ремонт платы управления, восстановление механизмов</p>
+            <div class="service-actions">
+              <a href="#contact" class="btn btn-primary">Заказать ремонт</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">👨‍🍳</div>
+          <div class="service-content">
+            <h3>Ремонт плит и духовок</h3>
+            <p>Замена нагревательных элементов, ремонт переключателей, настройка таймеров</p>
+            <div class="service-actions">
+              <a href="#contact" class="btn btn-primary">Заказать ремонт</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-form-section">
+          <h2 id="contact-title" class="section-title">Свяжитесь с нами</h2>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Ваше имя *</label>
+              <input type="text" id="name" name="name" required class="form-input">
+              <span class="error-message" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact" class="form-label">Телефон или email *</label>
+              <input type="text" id="contact" name="contact" required class="form-input">
+              <span class="error-message" id="contactError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Опишите проблему</label>
+              <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Например: не включается холодильник, модель..."></textarea>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-large">Отправить заявку</button>
+              <button type="button" class="btn btn-outline" id="clearFormBtn">Очистить форму</button>
+            </div>
+            
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Контактная информация</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <strong>Телефон:</strong>
+              <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+            </div>
+            <div class="contact-item">
+              <strong>Email:</strong>
+              <a href="mailto:info@stroiservice.ru">info@stroiservice.ru</a>
+            </div>
+            <div class="contact-item">
+              <strong>Адрес:</strong>
+              <span>г. Москва, ул. Электротехническая, 15</span>
+            </div>
+            <div class="contact-item">
+              <strong>Режим работы:</strong>
+              <span>Пн-Вс: 8:00-22:00</span>
+            </div>
+          </div>
+          
+          <div class="quick-action">
+            <a href="tel:+79991234567" class="btn btn-primary btn-large">Позвонить сейчас</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 СтройСервис. Ремонт бытовой техники. Все права защищены.</p>
+        <p class="footer-note">ОГРН: 1234567890123 | ИНН: 1234567890</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
